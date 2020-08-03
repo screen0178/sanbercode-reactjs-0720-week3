@@ -26,7 +26,7 @@ class HargaBuah extends React.Component {
                                 <tr>
                                     <td>{dat.nama}</td>
                                     <td>{dat.harga}</td>
-                                    <td>{dat.berat}</td>
+                                    <td>{dat.berat / 1000} Kg</td>
                                 </tr>
                             )
                         })}
