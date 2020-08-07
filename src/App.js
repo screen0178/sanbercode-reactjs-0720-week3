@@ -1,21 +1,33 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-// import HargaBuah from './tugas11/tugas11';
-// import Timer from './tugas12/tugas12'
-// import HargaBuah13 from './tugas13/tugas13';
-import HargaBuah14 from './tugas14/tugas14';
-import Temp from './temp'
+import {BrowserRouter as Router,Link} from 'react-router-dom'
+import Routes from './routes'
 
 function App() {
   return (
-    <div>
-      {/* <HargaBuah /> */}
-      {/* <Timer /> */}
-      {/* <HargaBuah13 /> */}
-      <HargaBuah14 />
-      {/* <Temp /> */}
-    </div>
+    <Router>
+      <div>
+      <nav>
+          <ul>
+            <li>
+              <Link to="/tugas11">tugas11</Link>
+            </li>
+            <li>
+              <Link to="/tugas12">tugas12</Link>
+            </li>
+            <li>
+              <Link to="/tugas13">tugas13</Link>
+            </li>
+            <li>
+              <Link to="/tugas14">tugas14</Link>
+            </li>
+            <li>
+              <Link to="/tugas15">tugas15</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <Routes/>
+    </Router> 
   );
 }
 

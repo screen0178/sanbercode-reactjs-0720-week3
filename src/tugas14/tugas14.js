@@ -1,4 +1,4 @@
-import React, {Component, useState, useEffect} from 'react'
+import React, { useState, useEffect} from 'react'
 import axios from 'axios'
 
 const HargaBuah14 = () => {
@@ -28,7 +28,7 @@ const HargaBuah14 = () => {
 
     const handleDelete = (evt) => {
         let id = parseInt(evt.target.value)
-        let newDaftarHargaBuah = daftarHargaBuah.filter(el => el.id != id)
+        let newDaftarHargaBuah = daftarHargaBuah.filter(el => el.id !== id)
 
         axios.delete(`http://backendexample.sanbercloud.com/api/fruits/${id}`)
         .then(res => {
